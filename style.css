@@ -1,0 +1,123 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #f0f4f8, #e6e9ef);
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #6f42c1; /* Фиолетовый фон */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #ab6ec5;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Добро пожаловать */
+#welcome {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+#welcome h1 {
+    font-size: 36px;
+    color: #6f42c1;
+}
+
+/* Общие разделы с информацией */
+.info-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    font-size: 30px;
+    color: #6f42c1;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.price-card {
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.price-card:hover {
+    background-color: #d8d9de;
+    transform: translateY(-10px);
+}
+
+.price-card h3 {
+    font-size: 24px;
+    color: #6f42c1;
+}
+
+.price-card p {
+    font-size: 18px;
+    color: #333;
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    color: #6f42c1;
+}
+
+footer {
+    background-color: #6f42c1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

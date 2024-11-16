@@ -1,0 +1,30 @@
+<!-- templates/payment_confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение платежа</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/portfolio">Портфолио</a>
+        <a href="/services">Услуги</a>
+        <a href="/contact">Контакты</a>
+    </nav>
+
+    <div class="payment-status">
+        <h2>Ваш заказ: {{ order.client_name }}</h2>
+        <p>Вы успешно оплатили первую половину суммы.</p>
+
+        {% if second_payment %}
+        <p>Вы успешно завершили оплату!</p>
+        {% else %}
+        <p>Теперь оплатите оставшуюся сумму.</p>
+        <a href="{{ url_for('second_payment', order_index=orders.index(order), payment_code=order.payment_code) }}">Завершить оплату</a>
+        {% endif %}
+    </div>
+</body>
+</html>
